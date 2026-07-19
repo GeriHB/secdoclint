@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "secdoclint"
+version = "0.1.0"
+description = "Publication-safety and consistency linter for cybersecurity Markdown repositories"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "MIT"}
+authors = [{name = "Halil Berisha"}]
+keywords = ["cybersecurity", "markdown", "linting", "reporting", "secrets"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Environment :: Console",
+  "Intended Audience :: Information Technology",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.11",
+  "Topic :: Security",
+]
+
+[project.scripts]
+secdoclint = "secdoclint.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

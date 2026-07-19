@@ -1,0 +1,13 @@
+exclude_globs = [
+  ".git/**",
+  ".venv/**",
+  "dist/**",
+  "build/**",
+]
+
+max_code_block_lines = 80
+
+required_any = [
+  ["DISCLAIMER.md"],
+  ["README.md"],
+]
