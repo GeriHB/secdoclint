@@ -94,15 +94,15 @@ Create `.secdoclint.toml` in the repository root:
 
 ```toml
 exclude_globs = [
-    ".git/**",
-    ".venv/**",
-    "vendor/**,
+  ".git/**",
+  ".venv/**",
+  "vendor/**",
 ]
 
 max_code_block_lines = 80
 required_any = [
-    ["DISCLAIMER.md"],
-    ["docs/00-scope-and-methodology.md", "docs/00-lab-environment-and-scope.md"],
+  ["DISCLAIMER.md"],
+  ["docs/00-scope-and-methodology.md", "docs/00-lab-environment-and-scope.md"],
 ]
 
 [rule_overrides]
