@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 from dataclasses import dataclass
-from enum import Enum
+from enum import IntEnum
 from pathlib import Path
 
 class Severity(IntEnum):
@@ -47,7 +47,7 @@ class Severity(IntEnum):
 
         return self.name
     
-@dataclass(forzen=True, slots=True)
+@dataclass(frozen=True, slots=True)
 class Finding:
     """A single issue reported by a SecDocLint rule.
     
