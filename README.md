@@ -4,9 +4,9 @@
 
 `SecDocLint` is a publication-safety and consistency linter for cybersecurity Markdown repositories.
 
-It helps catch problems that ordinary Markdown linters do not understand, including exposed crednetials, lab flags, authentication headers, oversized terminal dumps, generic screenshot descriptions, broken relative likns, missing scope files, and contradictory validation language.
+It helps catch problems that ordinary Markdown linters do not understand, including exposed credentials, lab flags, authentication headers, oversized terminal dumps, generic screenshot descriptions, broken relative links, missing scope files, and contradictory validation language.
 
-The tool is desgined for:
+The tool is designed for:
 
 - Penetration-test reports
 - Security research notes
@@ -19,14 +19,14 @@ The tool is desgined for:
 
 Security documentation often contains material that is technically valid but unsafe or unhelpful to publish:
 
-- A full NTLM hash copited from `secretsdump`
-- A kerberos ticket or JWT left in a code block
+- A full NTLM hash copied from `secretsdump`
+- A Kerberos ticket or JWT left in a code block
 - An `Authorization` header in captured HTTP
 - A platform flag or recovered lab password
 - A screenshot referenced as `![alt text]`
 - A README that links to a file that no longer exists
 - A section that says an attack was validated and later says it was never tested
-- Hundreds of lines of raw terminal output where a short exerpt would be clearer
+- Hundreds of lines of raw terminal output where a short excerpt would be clearer
 
 `SecDocLint` checks for these problems before the repository is shared
 
@@ -76,7 +76,7 @@ MEDIUM DOC-CONSISTENCY-001 docs/adcs.md:12
 - Private-key headers
 - Bearer and Basic authorization headers
 - JWT-like tokens
-- Github token formats
+- GitHub token formats
 - Lab and CTF flags
 - Full 32-byte hexadecimal credential material
 - Kerberos-ticket-like Base64 blobs
@@ -126,7 +126,7 @@ Its purpose is to make security documentation safer, more consistent, and easier
 
 ## Development
 
-Run teh tests:
+Run the tests:
 
 ```bash
 python -m unittest discover -s tests -v
