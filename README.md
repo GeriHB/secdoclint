@@ -1,5 +1,7 @@
 # SecDocLint
 
+[![CI](https://github.com/GeriHB/secdoclint/actions/workflows/ci.yml/badge.svg)](https://github.com/GeriHB/secdoclint/actions/workflows/ci.yml)
+
 `SecDocLint` is a publication-safety and consistency linter for cybersecurity Markdown repositories.
 
 It helps catch problems that ordinary Markdown linters do not understand, including exposed crednetials, lab flags, authentication headers, oversized terminal dumps, generic screenshot descriptions, broken relative likns, missing scope files, and contradictory validation language.
