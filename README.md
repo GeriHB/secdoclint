@@ -31,7 +31,7 @@ Security documentation often contains material that is technically valid but uns
 ## Quick start
 
 ```bash
-python -m pip install -e
+python -m pip install -e .
 secdoclint check .
 ```
 
